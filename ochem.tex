@@ -1,0 +1,3202 @@
+%% Organic Chemistry, 8th Edition by L. G. Wade, Jr. [ISBN-13: 978-0321768414] worked examples
+%% Mac Radigan
+
+\documentclass{article}[11pt]
+
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{setspace}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,nohead]{geometry}
+\usepackage{graphicx,amssymb,amstext,amsmath,amsthm,caption,mathtools}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{csvtools}
+\usepackage{pdftexcmds}
+\usepackage{minted}
+\usepackage{fancyvrb}
+\usepackage{chemfig}
+\usepackage{dcolumn}
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{}{}
+\bibliographystyle{IEEEtran}
+\newcommand\Quote[1]{\lq\textsl{#1}\rq}
+\newcommand\fr[2]{{\textstyle\frac{#1}{#2}}}
+\newcommand{\ssection}[1]{\section[#1]{\centering\normalfont\scshape #1}}
+\newcommand{\ssubsection}[1]{\subsection[#1]{\raggedright\normalfont\itshape #1}}
+\definesubmol\nobond{[,0.2,,,draw=none]}
+
+\begin{document}
+
+\title{Organic Chemistry, 8th Edition\\by L. G. Wade, Jr.\\ISBN-13: 978-0321768414\\worked examples}
+\author{Mac Radigan}
+
+\date{} % comment this out if you would like to include the date
+\doublespacing
+\maketitle
+
+\section{Chapter 1}
+\label{sec:ch1}
+
+\subsection{Problem 1-1}
+\label{sec:ch1p1}
+\noindent
+(a) Nitrogen has relatively stable isotopes (half-life greater than 1 second) of mass numbers 13, 14, 15, 16, and 17.  (All except $^{14}$N and $^{15}$N are radioactive.)  Calculate how many protons and neutrons are in each of these isotopes of nitrogen.
+\newline
+\newline
+$^{13}$N (7 protons, 6 neutrons)
+\newline
+$^{14}$N (7 protons, 7 neutrons)
+\newline
+$^{15}$N (7 protons, 8 neutrons)
+\newline
+$^{16}$N (7 protons, 9 neutrons)
+\newline
+$^{17}$N (7 protons, 10 neutrons)
+\newline
+\newline
+\noindent
+(b) Write the electronic configurations of the third-row elements shown in the partial periodic table in Figure 1-5.
+\newline
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{1}$ $\hfill{}$  Soduim (Na)    
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}$ $\hfill{}$  Magnesium (Mg) 
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}3p_{x}^{1}$ $\hfill{}$  Aluminum (Al)  
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}3p_{x}^{1}3p_{y}^{1}$ $\hfill{}$  Silicon (Si)   
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}3p_{x}^{1}3p_{y}^{1}3p_{z}^{1}$ $\hfill{}$  Phosphorus (P) 
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}3p_{x}^{2}3p_{y}^{1}3p_{z}^{1}$ $\hfill{}$  Sulphur (S)    
+\newline
+$1s^{2}2s^{2}2p^{6}3s^{2}3p_{x}^{2}3p_{y}^{2}3p_{z}^{2}$ $\hfill{}$  Argon (Ar)     
+\newline
+
+\subsection{Problem 1-2}
+\label{sec:ch1p2}
+\noindent
+Draw the Lewis structures for the following compounds.
+\newline
+\newline
+(a) ammonia, NH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-\lewis{2:,N}(-[6]H)-H} \end{center}
+\newline
+\newline
+(b) water, H$_{2}$O
+\newline
+\newline
+\begin{center} \chemfig{H-[:30]\lewis{1:3:,O}-[:-30]H} \end{center}
+\newline
+\newline
+(c) hydroniumion, H$_{3}$O$^{+}$
+\newline
+\newline
+\begin{center} \chemfig{H-\lewis{2:,O}^{\chemabove{\vphantom{X}}{\oplus}}(-[6]H)-H} \end{center}
+\newline
+\newline
+(d) propane, C$_{3}$H$_{8}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+(e) dimethylamine, CH$_{3}$NHCH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-\lewis{2:,N}(-[6]H)-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+(f) diethyl ether, CH$_{3}$CH$_{2}$OCH$_{2}$CH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-\lewis{2:6:,O}-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+(g) 1-chloropropane, CH$_{3}$CH$_{2}$CH$_{2}$Cl
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-\lewis{0:2:6:,Cl}} \end{center}
+\newline
+\newline
+(h) propan-2-ol, CH$_{3}$CH(OH)CH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)(-[2]\lewis{0:4:,O}(-[2]H))-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+(i) borane, BH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-B(-[6]H)-H} \end{center}
+\newline
+\newline
+(j) borane trifluoride, BF$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{\lewis{2:4:6:,F}-B(-[6]\lewis{0:4:6:,F})-\lewis{0:2:6:,F}} \end{center}
+\newline
+\newline
+\noindent
+Explain what is unusual about the bonding in the compounds in parts (i) and (j).
+\newline
+\newline
+Boron does not have an octet of electrons.
+\newline
+
+\subsection{Problem 1-3}
+\label{sec:ch1p3}
+\noindent
+Write Lewis structures for the following molecular formulas.
+\newline
+\newline
+(a) N$_{2}$
+\newline
+\newline
+\begin{center} \chemfig{\lewis{4:,N}~\lewis{0:,N}} \end{center}
+\newline
+\newline
+(b) HCN
+\newline
+\newline
+\begin{center} \chemfig{H-C~\lewis{0:,N}} \end{center}
+\newline
+\newline
+(c) HONO
+\newline
+\newline
+\begin{center} \chemfig{H-\lewis{2:6:,O}-\lewis{2:,N}=\lewis{2:6:,O}} \end{center}
+\newline
+\newline
+(d) CO$_{2}$
+\newline
+\newline
+\begin{center} \chemfig{\lewis{2:6:,O}=C=\lewis{2:6:,O}} \end{center}
+\newline
+\newline
+(e) CH$_{3}$CHNH
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)=\lewis{2:,N}-H} \end{center}
+\newline
+\newline
+(f) CHO$_{2}$H
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)=\lewis{2:,N}-H} \end{center}
+\newline
+\newline
+(g) C$_{2}$H$_{3}$Cl
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[6]H)=C(-[6]H)-\lewis{0:2:6:,Cl}} \end{center}
+\newline
+\newline
+(h) HNNH
+\newline
+\newline
+\begin{center} \chemfig{H-\lewis{2:,N}=\lewis{2:,N}-H} \end{center}
+\newline
+\newline
+(i) C$_{3}$H$_{6}$ (one double bond)
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[6]H)=C(-[6]H)-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+(j) C$_{3}$H$_{4}$ (two double bonds)
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[6]H)=C=C(-[6]H)-H} \end{center}
+\newline
+\newline
+(k) C$_{3}$H$_{4}$ (one triple bond)
+\newline
+\newline
+\begin{center} \chemfig{H-C~C-C(-[2]H)(-[6]H)-H} \end{center}
+\newline
+\newline
+
+\subsection{Problem 1-4}
+\label{sec:ch1p4}
+\noindent
+Circle (shown in red) any lone pairs (pairs of nonbonding electrons) in the structures you drew for Problems 1-3.
+\newline
+\newline
+(a) N$_{2}$
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{\lewis{4:,N}~\lewis{0:,N}}
+\schemestop
+\end{center}
+\newline
+\newline
+(b) HCN
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C~\lewis{0:,N}} 
+\schemestop
+\end{center}
+\newline
+\newline
+(c) HONO
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-\lewis{2:6:,O}-\lewis{2:,N}=\lewis{2:6:,O}} 
+\schemestop
+\end{center}
+\newline
+\newline
+(d) CO$_{2}$
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{\lewis{2:6:,O}=C=\lewis{2:6:,O}} 
+\schemestop
+\end{center}
+\newline
+\newline
+(e) CH$_{3}$CHNH
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)=\lewis{2:,N}-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+(f) CHO$_{2}$H
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)=\lewis{2:,N}-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+(g) C$_{2}$H$_{3}$Cl
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C(-[6]H)=C(-[6]H)-\lewis{0:2:6:,Cl}} 
+\schemestop
+\end{center}
+\newline
+\newline
+(h) HNNH
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-\lewis{2:,N}=\lewis{2:,N}-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+(i) C$_{3}$H$_{6}$ (one double bond)
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C(-[6]H)=C(-[6]H)-C(-[2]H)(-[6]H)-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+(j) C$_{3}$H$_{4}$ (two double bonds)
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C(-[6]H)=C=C(-[6]H)-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+(k) C$_{3}$H$_{4}$ (one triple bond)
+\newline
+\newline
+\begin{center} 
+\schemestart
+\setlewis{4pt}{}{red}
+\chemfig{H-C~C-C(-[2]H)(-[6]H)-H} 
+\schemestop
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 1-5}
+\label{sec:ch1p5}
+\noindent
+Use electronegatives to predict the dipole moments of the following bonds.
+\newline
+\newline
+(a) \chemfig{C-Cl}
+\newline
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{C}{\delta^{+}}-\chemabove{Cl}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+\newline
+(b) \chemfig{C-O}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{C}{\delta^{+}}-\chemabove{O}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+(c) \chemfig{C-N}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{C}{\delta^{+}}-\chemabove{N}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+(d) \chemfig{C-S}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{C}{\delta^{+}}-\chemabove{S}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+(e) \chemfig{C-B}
+\newline
+\begin{center} 
+\schemestart
+\arrow{<-[$\mu$]}+
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{C}{\delta^{-}}-\chemabove{B}{\delta^{+}}}
+\schemestop
+\end{center}
+\newline
+(f) \chemfig{N-Cl}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{N}{\delta^{+}}-\chemabove{Cl}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+(g) \chemfig{N-O}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{N}{\delta^{+}}-\chemabove{O}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+(h) \chemfig{N-S}
+\newline
+\begin{center} 
+\schemestart
+\arrow{<-[$\mu$]}+
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{N}{\delta^{-}}-\chemabove{S}{\delta^{+}}}
+\schemestop
+\end{center}
+\newline
+(i) \chemfig{N-B}
+\newline
+\begin{center} 
+\schemestart
+\arrow{<-[$\mu$]}+
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{N}{\delta^{-}}-\chemabove{B}{\delta^{+}}}
+\schemestop
+\end{center}
+\newline
+(j) \chemfig{B-Cl}
+\newline
+\begin{center} 
+\schemestart
++\arrow{->[$\mu$]}
+\schemestop
+\end{center} 
+\newline
+\begin{center} 
+\schemestart
+\chemfig{\chemabove{B}{\delta^{+}}-\chemabove{Cl}{\delta^{-}}}
+\schemestop
+\end{center}
+\newline
+
+\subsection{Problem 1-6}
+\label{sec:ch1p6}
+\noindent
+Draw Lewis structures for the following compounds and ions, showing appropriate formal charges.
+\newline
+\newline
+(a) $\left[\mbox{$CH_{3}OH_{2}$}\right]^{+}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[2]H)(-[6]H)-\chembelow{\lewis{2:,O}}{\hspace{3.5mm}\oplus}(-[6]H)-H} \end{center}
+\newline
+\newline
+(b) NH$_{4}$Cl
+\newline
+\newline
+\begin{center} \chemfig{H-\chemabove{N}{\hspace{3.5mm}\oplus}(-[2]H)(-[6]H)-H} \hspace{0.5cm} \chemfig{\chemabove{\lewis{0:2:4:6:,Cl}}{\hspace{3.5mm}\ominus}} \end{center}
+\newline
+\newline
+(c) $\left(\mbox{$\mbox{CH}_{3}$}\right)_{4}\mbox{NCl}$
+\newline
+\newline
+\begin{center} \chemfig{C((-[3]H)(-[4]H)(-[5]H))-N(-[2]C((-[1]H)(-[2]H)(-[3]H)))(-[6]C((-[5]H)(-[6]H)(-[7]H)))-C((-H)(-[1]H)(-[7]H))} \hspace{0.5cm} \chemfig{\chemabove{\lewis{0:2:4:6:,Cl}}{\hspace{3.5mm}\ominus}} \end{center}
+\newline
+\newline
+(d) NaOCH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{\chemabove{Na}{\hspace{3.5mm}\oplus}} \hspace{0.5cm} \chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}\ominus}-C((-[2]H)(-[6]H))-H} \end{center}
+\newline
+\newline
+(e) $^{+}$CH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-\chemabove{C}{\ominus}(-[6]H)-H} \end{center}
+\newline
+\newline
+(f) $^{-}$CH$_{3}$
+\newline
+\newline
+\begin{center} \chemfig{H-\chemabove{\lewis{2:,C}}{\hspace{3.5mm}\ominus}(-[6]H)-H} \end{center}
+\newline
+\newline
+(g) NaBH$_{4}$
+\newline
+\newline
+\begin{center} \chemfig{\chemabove{Na}{\hspace{3.5mm}\oplus}} \hspace{0.5cm} \chemfig{H-\chemabove{B}{\hspace{3.5mm}\ominus}((-[2]H)(-[6]H))-H} \end{center}
+\newline
+\newline
+(h) NaBH$_{3}$CN
+\newline
+\newline
+\begin{center} \chemfig{\chemabove{Na}{\hspace{3.5mm}\oplus}} \hspace{0.5cm} \chemfig{H-\chemabove{B}{\hspace{3.5mm}\ominus}((-[2]H)(-[6]H))-C~\lewis{0:,N}} \end{center}
+\newline
+\newline
+(i) \chemfig{${(}CH_{3}{)}_{2}O-BF_{3}$}
+\newline
+\newline
+\begin{center} \chemfig{C((-[3]H)(-[4]H)(-[5]H))-\chemabove{\lewis{2:,O}}{\hspace{3.5mm}{\oplus}}(-[6]\chemabove{B}{\hspace{3.5mm}{\oplus}}((-[4]\lewis{2:4:6:,F})(-[6]\lewis{0:4:6:,F})(-\lewis{0:2:6:,F})))-C((-H)(-[1]H)(-[7]H))} \end{center}
+\newline
+\newline
+(j) $\left[\mbox{$HONH_{3}$}\right]^{+}$
+\newline
+\newline
+(k) $\mbox{KOC}\left(\mbox{$\mbox{CH}_{3}$}\right)_{3}$
+\newline
+\begin{center}
+\chemfig{\chemabove{\chemabove{K}{\hspace{3.5mm}\oplus}}{\hspace{3.5mm}\ominus}} \hspace{0.5cm} \chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}\ominus}-N(-[2]C((-[1]H)(-[2]H)(-[3]H)))(-[6]C((-[5]H)(-[6]H)(-[7]H)))-C((-H)(-[1]H)(-[7]H))} 
+\end{center}
+\newline
+(l) $\left[\chemfig{$H_{2}C=OH}\right]^{+}$
+\newline
+\newline
+\begin{center} \chemfig{H-C(-[6]H)=\chembelow{\lewis{2:,O}}{\hspace{3.5mm}\oplus}-H} \end{center}
+\newline
+\newline
+
+\subsection{Problem 1-7}
+\label{sec:ch1p7}
+\noindent
+Draw the important resonace forms for the following molecules and ions.
+\newline
+\newline
+(a) CO$^{2-}_{3}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}{\ominus}}-C(=[2]\lewis{0:4:,O})-\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}}}
+\arrow{<->}
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}{\ominus}}-C(-[2]\chemabove{\lewis{0:2:4:,O}}{\hspace{3.5mm}{\ominus}})=\lewis{2:6:,O}}
+\arrow{<->}
+\chemfig{\lewis{2:6:,O}=C(-[2]\chemabove{\lewis{0:2:4:,O}}{\hspace{3.5mm}\ominus})-\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+(b) NO$^{-}_{3}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}{\ominus}}-\chembelow{N}{\oplus}(=[2]\lewis{0:4:,O})-\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}}}
+\arrow{<->}
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}{\ominus}}-\chembelow{N}{\oplus}(-[2]\chemabove{\lewis{0:2:4:,O}}{\hspace{3.5mm}{\ominus}})=\lewis{2:6:,O}}
+\arrow{<->}
+\chemfig{\lewis{2:6:,O}=\chembelow{N}{\oplus}(-[2]\chemabove{\lewis{0:2:4:,O}}{\hspace{3.5mm}\ominus})-\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+(c) NO$^{-}_{2}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}{\ominus}}-\lewis{2:,N}=\lewis{2:6:,O}}
+\arrow{<->}
+\chemfig{\lewis{2:4:6:,O}=\lewis{2:,N}-\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+(d) $\chemfig{$H_{2}C=CH-CH^{+}_{2}$}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{H-C(-[6]H)=C(-[6]H)-\chemabove{C}{\oplus}(-[6]H)-H}
+\arrow{<->}
+\chemfig{H-\chemabove{C}{\oplus}(-[6]H)-C(-[6]H)=C(-[6]H)-H}
+\chemfig{}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+(e) $\chemfig{$H_{2}C=CH-CH^{-}_{2}$}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{H-C(-[6]H)=C(-[6]H)-\chemabove{\lewis{2:,C}}{\hspace{2.5mm}\ominus}(-[6]H)-H}
+\arrow{<->}
+\chemfig{H-\chemabove{\lewis{2:,C}}{\hspace{2.5mm}\ominus}(-[6]H)=C(-[6]H)-C(-[6]H)-H}
+\chemfig{}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+(f) SO$^{2-}_{4}$
+\newline
+\newline
+(g) $\left[\mbox{CH}_{3}\mbox{C}\left(\mbox{OCH}_{3}\right)_{2}\right]^{+}$
+\newline
+\newline
+(h) B\left\(OH\right\)$_{3}$
+\newline
+\newline
+
+\subsection{Problem 1-8}
+\label{sec:ch1p8}
+\noindent
+For each of the following compounds, draw the important resonance forms.  Indicate which structures are major and minor contributors or whether they have the same energy.
+\newline
+\newline
+(a) H$_2$CNN
+\newline
+\newline
+(b) \chemfig{H$_2$C=CH-NO$_2$}
+\newline
+\newline
+(c) $\left\[H_{2}COH\right]^{+}$
+\newline
+\newline
+(d) $\left\[H_{2}CNO_{2}\right]^{-}$
+\newline
+\newline
+(e) $\left\[H_{2}CCN_{2}\right]^{-}$
+\newline
+\newline
+(f) \chemfig{H2N-\chemabove{C}{+}H-CH=CH-NH$_{2}$}
+\newline
+\newline
+(g) $\left\[CH_{3}C\left(OH\right\)_{2}\right]^{-}$
+\newline
+\newline
+(h) \chemfig{H-C(=[2]O)-\lewis{2,C}H-C(=[2]O)-H}
+\newline
+\newline
+(i) \chemfig{H-C(=[2]O)-NH$_2$}
+\newline
+\newline
+(j) $\left\[CH_{3}CHNH\right]^{-}$
+\newline
+\newline
+
+\subsection{Problem 1-9}
+\label{sec:ch1p9}
+\noindent
+Draw the complete Lewis structures for the following condensed structural formulas.
+\newline
+\newline
+(a) CH$_3$(CH$_2$)$_3$CH(CH$_3$)$_2$
+\newline
+\newline
+(b) (CH$_3$)$_2$CHCH$_2$Cl
+\newline
+\newline
+(c) CH$_3$CH$_2$COCN
+\newline
+\newline
+(d) CH$_2$COCOOH
+\newline
+\newline
+(e) (CH$_3$)$_3$CCOCHCH$_2$
+\newline
+\newline
+(f) CH$_3$)$_3$COH
+\newline
+\newline
+(g) (CH$_3$CH$_2$)$_2$CO
+\newline
+\newline
+(h) (CH$_3$)$_3$COH
+\newline
+\newline
+
+%\subsection{Problem 1-10}
+%\label{sec:ch1p10}
+%\noindent
+%Give the Lewis structures corresponding to the following line-angle strucutres.  Give the molecular formula for each structure.
+%\newline
+%\newline
+%(a) \chemfig{*6(------NH)}
+%\newline
+%\newline
+%(b) \chemfig{*5(--O--(-[1](-[3])(-[1])(-[7])))}
+%\newline
+%\newline
+%(c) \chemfig{*5(-=-N-=-)}
+%\newline
+%\newline
+%(d) \chemfig{*5(-----(-[7]OH)}
+%\newline
+%\newline
+%(e) \chemfig{*5(----=(-[1]CHO))}
+%\newline
+%\newline
+%(f) \chemfig{--=--(=[1]O)-)}
+%\newline
+%\newline
+%(g) \chemfig{-=-=-=(-[:30](=[6]O)-[:-30]))}
+%\newline
+%\newline
+%(h) \chemfig{-[:30]-[:-30](=[6]O)-[:30]-[:-30]}
+%\newline
+%\newline
+
+\newpage
+
+%% [ CHAPTER 2 ] ----------------------------------------------------------------------------------------------
+
+\section{Chapter 2}
+\label{sec:ch2}
+
+\subsection{Problem 2-1}
+\label{sec:ch2p1}
+\noindent
+(a) Use your molecular models to make ethane, and compare the model with the preceeding structures.
+\newline
+\newline
+(b) Make a model of propane, (C$_{3}$H$_{8}$), and draw this model using dashed lines and wedges to represent bonds going back and coming forward.
+\newline
+\newline
+\begin{center} \chemfig{H-[:-30]C((<[:250]H)(>:[:300]H))-[:30]C((<[:120]H)(>:[:60]H))-[:-30]C((<[:250]H)(>:[:300]H))-[:30]H} \end{center}
+\newline
+\newline
+
+\subsection{Problem 2-2}
+\label{sec:ch2p2}
+\noindent
+(a) Predict the hybridization of the oxygen atom in water, H$_{2}$O.  Draw a picture of its three-dimensional structure, and explain why its bond angle is 104.5$^{\circ}$.
+\newline
+\newline
+Oxygen is sp$^{3}$ hybridized.  Repulsion between the lone electron pairs compresses the bond angle (which would normally be 109.5$^{\circ}$ due to tetrahedral configuration), to 104.5$^{\circ}$.
+\newline
+\newline
+\begin{center} \chemfig{\lewis{1:3:,H}(<[:250]O)(>:[:300]O)} \end{center}
+\newline
+\newline
+(b) The electrostatic potential maps for ammonia and water are shown here.  The structure of ammonia is shown withs its EPM.  Note how the lone pair creates a region of high electron potential (red), and the hydrogens in the regions of low electron potential (blue).  Show how your three-dimensional structure of water corresponds with its EPM.
+\newline
+\newline
+\begin{center} matches \end{center}
+\newline
+\newline
+
+\subsection{Problem 2-3}
+\label{sec:ch2p3}
+\noindent
+Predict the hybridization, geometry, and bond angles for the central atoms in:
+\newline
+\newline
+(a) but-2-ene, \chemfig{CH$_3$CH=CHCH$_3$}
+\newline
+\newline
+\begin{center} 
+\chemfig{C(<[:250]H)(>:[:300]H)(-[:160]H)-[1]C(-[3]H)=C(-[1]H)-[7]C(-[:30]H)(<[:250]H)(>:[:300]H)}
+\end{center}
+\newline
+\newline
+Carbon double bonds have linear angle of 180$^{\circ}$.  Neighboring carbons have an angle of 120$^{\circ}$.  Inner carbons are sp$^2$ hybridized.  Hydrogens around outer carbons have tetrahedral configuration with 109$^{\circ}$ angles.  Outer carbons are sp$^3$ hybridized.
+\newline
+\newline
+(a) \chemfig{CH$_3$CH=NH}
+\newline
+\newline
+\begin{center} 
+\chemfig{C(<[:250]H)(>:[:300]H)(-[:160]H)-[1]C(-[3]H)=\lewis{7:,N}(-[1]H)}
+\end{center}
+\newline
+\newline
+Carbon double bonds have linear angle of 180$^{\circ}$.  Neighboring carbons have an angle of 120$^{\circ}$.  Inner carbon is sp$^2$ hybridized.  Hydrogens around outer carbons have tetrahedral configuration with 109$^{\circ}$ angles.  Outer carbons are sp$^3$ hybridized.
+\newline
+\newline
+
+\subsection{Problem 2-4}
+\label{sec:ch2p4}
+\noindent
+Predict the hybridization, geometry, and bond angles for the carbon and nitrogen atoms in acetonitrile (\chemfig{CH$_3$-C~\lewis{0:,N}}).
+\newline
+\newline
+\begin{center} 
+\chemfig{C(<[:250]H)(>:[:300]H)(-[:160]H)-C~\lewis{0:,N}}
+\end{center}
+\newline
+\newline
+Carbon-carbon single bond and carbon-nitrogen triple bond has linear angle of 180$^{\circ}$.  Inner carbon and nitrogen is sp$^2$ hybridized.  Hydrogens around outer carbons have tetrahedral configuration with 109$^{\circ}$ angles.  Outer carbon is sp$^3$ hybridized.
+\newline
+\newline
+
+\subsection{Problem 2-5}
+\label{sec:ch2p5}
+\noindent
+1. Draw the Lewis structure for each compound.
+\newline
+\newline
+2. Label the hybridization, geometry, and bond angles around each atom other than hydrogen.
+\newline
+\newline
+3. Draw a three-dimensional representation (use wedges and dashed lines) of the structure.
+\newline
+\newline
+(a) CO$_2$
+\newline
+\newline
+\begin{center}
+\chemfig{\lewis{2:6:,O}=C=\lewis{2:6:,O}}
+\end{center}
+\newline
+\newline
+Linear bond angle of 180$^{\circ}$.  Oxygens are sp$^{\circ}$ hybridized, carbon is sp hybridized.
+\newline
+\newline
+(b) CH$_3$OCH$_3$
+\newline
+\newline
+\begin{center}
+\chemfig{C(-[2]H)(-[4]H)(-[6]H)-\lewis{2:6:,O}-C(-[2]H)(-[6]H)(-H)}
+\newline
+\end{center}
+\newline
+Tetrahedral geometry with bond angle of 109$^{\circ}$.  Carbon atoms are sp$^{3}$ hybridized.
+\newline
+\newline
+\begin{center}
+\chemfig{H-[:-30]C(<[:-120]H)(>:[:-60]H)-[:30]O-[:-30]C(<[:-120]H)(>:[:-60]H)-[:30]H}
+\end{center}
+\newline
+\newline
+(c) $\left(CH_{3}\right)_{3}O^{+}$
+\newline
+\newline
+\begin{center}
+\chemfig{H-C(-[3]H)(-[5]H)-\lewis{2:,O}(-[6]C(-[5]H)(-[6]H)(-[7]H))-C(-[1]H)(-[7]H)-H}
+\end{center}
+\newline
+\newline
+Tetrahedral geometry with bond angle of 109$^{\circ}$.  Carbon atoms are sp$^{3}$ hybridized.
+\newline
+\newline
+\begin{center}
+\chemfig{H-[:-30]C(<[:250]H)(>:[:300]H)-[:30]O(<[7]C(<[:250]H)(>:[:300]H)-H)(-[2]C(<[:150]H)(>:[:125]H)(-[:30]H))}
+\end{center}
+\newline
+\newline
+(d) CH$_3$COOH
+\newline
+\newline
+\begin{center}
+\chemfig{H-C(-[2]H)(-[6]H)-C(=[2]\lewis{0:4:,O})-\lewis{2:6:,O}-H}
+\end{center}
+\newline
+\newline
+Planar geometry, with 120$^{\circ}$ bond angles.  Oxygen sp$^3$ hybridized, with tetrahedral formation having 109$^{\circ}$ bond angles.
+\newline
+\newline
+\begin{center}
+\chemfig{H-[:-30]C(<[:250]H)(>:[:300]H)-[:30]C(=[2]\lewis{0:4:,O})-[:-30]\lewis{2:6:,O}-[:30]H}
+\end{center}
+\newline
+\newline
+(e) CH$_3$CCH
+\newline
+\newline
+\begin{center}
+\chemfig{H-C(-[2]H)(-[6]H)-C~C-H}
+\end{center}
+\newline
+\newline
+Leftmost carbon sp$^3$ hybridized, with tetrahedral geometry having bond angles of 109$^{\circ}$.  Two rightmost carbons are sp hybridized, with linear geometry having 180$^{\circ}$ bond angles.
+\newline
+\newline
+\begin{center}
+\chemfig{C(<[:250]H)(>:[:300]H)(-[:120]H)-C~C-H}
+\end{center}
+\newline
+\newline
+(f) CH$_3$CHNCH$_3$
+\newline
+\newline
+\begin{center}
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[6]H)=\lewis{2:,N}-C(-[2]H)(-[6]H)-H}
+\end{center}
+\newline
+\newline
+Central carbon nitrogen formation is triagonal planar, having sp$^2$ hybridization and 120$^{\circ}$ bond angles.  Outermost carbons are sp$^3$ hybridized, with tetrahedral geometry having 109$^{\circ}$ bond angles.
+\newline
+\newline
+\begin{center}
+\chemfig{H-C(<[:250]H)(>:[:300]H)-[1]C(-[:120]H)=\lewis{6:,N}-[1]C(<[:140]H)(>:[:115]H)-H}
+\end{center}
+\newline
+\newline
+(g) H$_2$CCO
+\newline
+\newline
+\begin{center} 
+\chemfig{C(<[:250]H)(>:[:300]H)(-[:160]H)-C~\lewis{0:,N}}
+\end{center}
+\newline
+\newline
+Central carbon sp hybridized, with linear geometry having 180$^{\circ}$.  Outer carbon sp$^2$ hybridized, having triagonal geometry with 120$^{\circ}$ bond angles.
+\newline
+\newline
+
+\subsection{Problem 2-6}
+\label{sec:ch2p6}
+\noindent
+Allene, \chemfig{CH$_2$=C=CH$_2$}, has the structure shown below.  Explain how the bonding in allene requires the two \chmfig{=CH$_2$} groups at its end to be at right angles to eachother.
+\newline
+\newline
+\begin{center} 
+\chemname{\chemfig{C(<[:160]H)(>:[:210]H)=C(-[1]H)(-[7]H)}}{allene}
+\end{center}
+\newline
+\newline
+The two leftmost carbons in the figure are sp$^3$ hybridized.  Electrostatic repusive forces from the $\pi$ bonds rotates the hydrogens on the rightmost side.
+\newline
+\newline
+
+\subsection{Problem 2-7}
+\label{sec:ch2p7}
+\noindent
+1. Draw important resonance forms for each compound.
+\newline
+\newline
+2. Label the hybridization and bond angles around each atom other than hydrogen.
+\newline
+\newline
+3. Use a three-dimensional drawing to show where the electrons are pictured to be in each resonance form.
+\newline
+\newline
+(b) $\left\[CH_{2}OH\right\]^{+}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{\chembelow{C}{\hspace{-3.5mm}{\oplus}}(-[:150]H)(-[:210]H)-\lewis{0:,O}-[:60]H}
+\arrow{<->}
+\chemfig{C(-[:150]H)(-[:210]H)=\chembelow{\lewis{0:6:,O}}{\oplus}-[:60]H}
+\schemestop
+\end{array}
+\right\}
+\end{center}
+\newline
+\newline
+Hydrogen bonds with 120$^{\circ}$ bond angles.  Carbon and oxygen are sp$^2$ hybridized.
+\newline
+\newline
+(c) $\left\[CH_{2}CHO\right\]^{-}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{H-\chemabove{\lewis{3:,C}}{\hspace{7mm}\ominus}(-[7]H)-[1]C(-[3]H)=\lewis{2:6:,O}}
+\arrow{<->}
+\chemfig{H-C(-[7]H)=[1]C(-[3]H)-\chemabove{\lewis{0:2:6:,O}}{\hspace{4.5mm}\ominus}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+Hydrogen bonds with 120$^{\circ}$ bond angles.  Carbon and oxygen are sp$^2$ hybridized.
+\newline
+\newline
+\newline
+(d) $\left\[CH_{3}CHNO_{2}\right\]^{-}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{C(<[:190]H)(>:[:150]H)(-[7]H)-[1]\chemabove{\lewis{4:,C}}{\hspace{3.5mm}\ominus}(-[3]H)-\chemabove{N}{\hspace{-3.5mm}\oplus}(=[1]\lewis{0:2:,O})(-[7]\lewis{0:2:6:,O})}
+\arrow{<->}
+\chemfig{C(<[:190]H)(>:[:150]H)(-[7]H)-[1]\chemabove{\lewis{4:,C}}{\hspace{3.5mm}\ominus}(-[3]H)-\chemabove{N}{\hspace{-3.5mm}\oplus}(-[1]\lewis{0:2:6:,O})(=[7]\lewis{0:6:,O})}
+\arrow{<->}
+\chemfig{C(<[:190]H)(>:[:150]H)(-[7]H)-[1]C(-[3]H)=\chemabove{N}{\hspace{-3.5mm}\oplus}(-[1]\lewis{0:2:6:,O})(=[7]\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}{\ominus}})}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+Leftmost carbon of the leftmost resonance form is sp$^3$ hybridized, with tetrahedral geometry having 109$^{\circ}$ bond angles.  Other atoms are sp$^2$ hybridized.
+\newline
+\newline
+(e) $\left\[CH_{2}CN\right\]^{-}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{C(-[3]H)(-[5]H)=C=\chemabove{\lewis{0:6:,N}}{\ominus}}
+\arrow{<->}
+\chemfig{\chemabove{\lewis{4:,C}}{\hspace{3.5mm}{\ominus}}(-[3]H)(-[5]H)-C~\lewis{0:,N}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+Leftmost carbon is sp$^2$ hybridized.  Carbon and nitrogen are sp hybridized.
+\newline
+\newline
+(f) $B\left(HO\right)_{3}$
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{B(-[3]\lewis{0:2:,O}-[4]H)(-[5]\lewis{0:6:,O}-[4]H)-\lewis{0:6:,O}(-[1]H)}
+\arrow{<->}
+\chemfig{\chemabove{B}{\hspace{3.5mm}\ominus}(-[3]\lewis{0:2:,O}-[4]H)(-[5]\lewis{0:6:,O}=[4]H)=\chembelow{\lewis{0:,O}}{\oplus}(-[1]H)}
+\schemestop
+\end{array}
+\end{center}
+%
+\newline \newline
+%
+\begin{center}
+\begin{array}{l}      
+\schemestart
+\arrow{<->}
+\chemfig{\chemabove{B}{\hspace{3.5mm}\ominus}(=[3]\chemabove{\lewis{2:,O}}{\hspace{3.5mm}\oplus}-[4]H)(-[5]\lewis{0:6:,O}-[4]H)-\lewis{0:6:,O}(-[1]H)}
+\arrow{<->}
+\chemfig{\chemabove{B}{\hspace{3.5mm}\ominus}(=[3]\lewis{0:2:,O}-[4]H)(-[5]\chembelow{\lewis{6:,O}}{\hspace{3.5mm}\oplus}-[4]H)-\lewis{0:6:,O}(-[1]H)}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+Oxygen and boron is sp$^2$ hybridized.
+\newline
+\newline
+(g) ozone, (O$_3$ bonded OOO)
+\newline
+\newline
+\begin{center}
+\left\{
+\begin{array}{l}      
+\schemestart
+\chemfig{\lewis{4:6:,O}=[:30]\chembelow{\lewis{2:,O}}{\oplus}-[:-30]\chemabove{\lewis{0:2:6:,O}}{\hspace{3.5mm}\ominus}}
+\arrow{<->}
+\chemfig{\chemabove{\lewis{2:4:6:,O}}{\hspace{-3.5mm}\ominus}=[:30]\chembelow{\lewis{2:,O}}{\oplus}-[:-30]\lewis{0:6:,O}}
+\schemestop
+\end{array}\right\}
+\end{center}
+\newline
+\newline
+Oxygen is sp$^2$ hybridized, and has bond angles of 120$^{\circ}$.
+\newline
+\newline
+
+\subsection{Problem 2-8}
+\label{sec:ch2p8}
+\noindent
+For each pair of compounds, determine whether they represent different compounds or a single compound.
+\newline
+\newline
+(a) 
+\schemestart
+\chemfig{
+(-[:120]\mbox{H$_3$C})
+(-[:-120]\mbox{CH$_2$CH$_3$})
+=
+(-[:60]\mbox{CH$_2$CH$_3$})
+(-[:-60]\mbox{CH$_3$})
+}
+\mbox{ and }
+\chemfig{
+(-[:120]\mbox{H$_3$C})
+(-[:-120]\mbox{CH$_3$})
+=
+(-[:60]\mbox{CH$_2$CH$_3$})
+(-[:-60]\mbox{CH$_2$CH$_3$})
+}
+\schemestop
+\newline
+\newline
+\begin{center} different compounds \end{center}
+\newline
+\newline
+(b) 
+\schemestart
+\chemfig{
+(-[:-120]\mbox{H$_3$C})
+(<[:120]\mbox{H})
+(>:[:-190]\mbox{H})
+=
+(-[:-60]\mbox{CH$_2$CH$_3$})
+(<[:60]\mbox{H})
+(>:[:-10]\mbox{CH$_3$})
+}
+\mbox{ and }
+\chemfig{
+(-[:120]\mbox{H$_3$C})
+(<[:-120]\mbox{H})
+(>:[:-190]\mbox{H})
+=
+(-[:60]\mbox{CH$_3$})
+(<[:-10]\mbox{H})
+(>:[:-60]\mbox{CH$_2$CH$_3$})
+}
+\schemestop
+\newline
+\newline
+\begin{center} same compound \end{center}
+\newline
+\newline
+(c) 
+\schemestart
+\chemfig{
+C
+(-[:120]\mbox{Br})
+(-[:-120]\mbox{H})
+=C
+(-[:60]\mbox{F})
+(-[:-60]\mbox{Cl})
+}
+\mbox{ and }
+\chemfig{
+C
+(-[:120]\mbox{Cl})
+(-[:-120]\mbox{F})
+=C
+(-[:60]\mbox{Br})
+(-[:-60]\mbox{H})
+}
+\schemestop
+\newline
+\newline
+\begin{center} different compounds \end{center}
+\newline
+\newline
+(d) 
+\chemfig{
+(-[:120]\mbox{Br})
+(<[:-120]\mbox{H})
+(>:[:-190]\mbox{H})
+=
+(-[:60]\mbox{H})
+(<[:-60]\mbox{F})
+(>:[:-10]\mbox{Cl})
+}
+\mbox{ and }
+\chemfig{
+(-[:120]\mbox{Br})
+(<[:-120]\mbox{H})
+(>:[:-190]\mbox{H})
+=
+(>:[:60]\mbox{F})
+(<[:-10]\mbox{Cl})
+(-[:-60]\mbox{H})
+}
+\schemestop
+\newline
+\newline
+\begin{center} same compound \end{center}
+\newline
+\newline
+
+\subsection{Problem 2-9}
+\label{sec:ch2p9}
+\noindent
+Two compounds with the formula \chemfig{CH$_3$-CH=N} are known.
+\newline
+\newline
+(a) Draw a Lewis structure for this molecule, and label the hybridization of each carbon and nitrogen atom.
+\newline
+\newline
+\chemfig{
+H
+(-[2]H)
+(-[6]H)
+-C
+(-[2]H)
+-C
+=\lewis{2:,N}
+-C
+(-[2]H)
+(-[6]H)
+-H
+}
+\schemestop
+\newline
+\newline
+Leftmost and rightmost carbons are sp$^3$ hybridized, center carbon is sp$^2$ hybridized.
+\newline
+\newline
+(b) What two compounds have this formula?
+\newline
+\newline
+\chemfig{
+(-[:120]\mbox{CH$_3$})
+(-[:-120]\mbox{H})
+=\lewis{2:,N}
+(-[:-60]\mbox{CH$_3$})
+}
+\mbox{ and }
+\chemfig{
+(-[:120]\mbox{CH$_3$})
+(-[:-120]\mbox{H})
+=\lewis{6:,N}
+(-[:60]\mbox{CH$_3$})
+}
+\schemestop
+\newline
+\newline
+(c) Explain why only one compound with the formula (CH$_3$)$_2$CNCH$_3$ is known.
+\newline
+\newline
+The CH$_3$ substituent of N has only one configuration.
+\newline
+\newline
+
+\subsection{Problem 2-10}
+\label{sec:ch2p10}
+\noindent
+Which of the following compounds show cis-trans isomerism?  Draw the cis and trans isomers of those that do.
+\newline
+\newline
+(a) \chemfig{CHF=CHF}
+\newline
+\newline
+\begin{center}
+\schemestart
+\chemname{\chemfig{C(-[3]F)(-[5]H)=C(-[1]F)(-[7]H)}}{cis}
+\mbox{ and }
+\chemname{\chemfig{C(-[3]F)(-[5]H)=C(-[1]F)(-[7]H)}}{trans}
+\schemestop
+\end{center}
+\newline
+\newline
+(b) \chemfig{F$_2$C=CH$_2$}
+\newline
+\newline
+\begin{center} not cis-trans isomeric \end{center}
+\newline
+\newline
+(c) \chemfig{CH$_2$=CH-CH$_2$-CH$_3$}
+\newline
+\newline
+\begin{center} not cis-trans isomeric \end{center}
+\newline
+\newline
+(d) \chemfig{*5(--(=CHCH$_3$)---)}
+\newline
+\newline
+\begin{center} not cis-trans isomeric \end{center}
+\newline
+\newline
+(e) \chemfig{*5(--(=CHCH$_3$)---)}
+\newline
+\newline
+\begin{center}
+\schemestart
+\chemname{\chemfig{*5(--(-[7]C(-[5]H)=C(-[1]CH$_3$)(-[7]H))---)}}{cis}
+\mbox{ and }
+\chemname{\chemfig{*5(--(-[7]C(-[5]H)=C(-[1]H)(-[7]CH$_3$))---)}}{trans}
+\schemestop
+\end{center}
+\newline
+\newline
+(f) \chemfig{*5(--(=CHCH$_3$)---(-[6])(-[7]))}
+\newline
+\newline
+\begin{center}
+\schemestart
+\chemfig{*5(--(C=C(-[1]CH$_3$)(-[7]H))---(-[5])(-[7]))}
+\mbox{ and }
+\chemfig{*5(--(C=C(-[1]H)(-[7]CH$_3$))---(-[5])(-[7]))}
+\schemestop
+\end{center}
+\newline
+\newline
+
+
+\newpage
+
+%% [ CHAPTER 3 ] ----------------------------------------------------------------------------------------------
+
+\section{Chapter 3}
+\label{sec:ch3}
+
+\subsection{Problem 3-1}
+\label{sec:ch3p1}
+\noindent
+Using the general molecular formula for alkanes:
+\newline
+\newline
+(a) Predict the molecular formula of the C$_{28}$ straight-chain alkane.
+\newline
+\newline
+\begin{center} C$_{28}$H$_{58}$ \end{center}
+\newline
+\newline
+(b) Predict the molecular formula of 4,6-diethyl-12-(3,5-dimethyloctyl)triacontaine, an alkane conaining 44 carbon atoms.
+\newline
+\newline
+\begin{center} C$_{44}$H$_{90}$ \end{center}
+\newline
+\newline
+
+\subsection{Problem 3-2}
+\label{sec:ch3p2}
+\noindent
+Name the following alkanes and haloalkanes.  When two or more subsituents are present, list them in alphabetical order.
+\newline
+\newline
+(a) \chemfig{CH$_{3}$(-[2]CH$_{2}$-CH$_{3}$)-CH-CH$_{2}$-CH$_{3}$}
+\newline
+\newline
+\begin{center} 3-methylpentane \end{center} 
+\newline
+\newline
+(b) \chemfig{CH$_{3}$(-[2]Br)-CH(-[2]CH$_{2}$CH$_{3}$)-CH$_{3}$}
+\newline
+\newline
+\begin{center} 2-bromo-3-methylpentane \end{center} 
+\newline
+\newline
+(c) \chemfig{
+\mbox{CH$_3$}
+-\mbox{CH$_2$}
+-\mbox{CH}
+(-[2]\mbox{CH$_2$}-[4]\mbox{CH$_3$})
+--\mbox{CH}
+(-[2]\mbox{CH$_2$CH$\left(CH_3\right)_2$})
+-\mbox{CH$_2$}
+-\mbox{CH$_2$}
+-\mbox{CH$_3$}
+}
+\newline
+\newline
+\begin{center} 5-ethyl-2-methyl-4-propylheptane \end{center} 
+\newline
+\newline
+(d) \chemfig{
+\mbox{CH$_3$}
+-\mbox{CH$_2$}
+-\mbox{CH$_2$}
+-\mbox{CH$_2$}
+-\mbox{CH$_2$}
+-\mbox{CH$_2$}
+-\mbox{CH}
+(-[2]\mbox{CH$_2$}-[2]CH(-[4]\mbox{CH$_3$})(-\mbox{CH$_3$}))
+-\mbox{CH}
+(-[2]\mbox{CH$_3$})
+-\mbox{CH$_3$}
+}
+\newline
+\newline
+\begin{center} 4-isopropyl-2-methyldecane \end{center} 
+\newline
+\newline
+
+\subsection{Problem 3-3}
+\label{sec:ch3p3}
+\noindent
+Write structures for the following compounds.
+\newline
+\newline
+(a) 3-ethyl-4-methylhexane
+\newline
+\newline
+\begin{center} \chemfig{
+(!\nobond\chembelow[1ex]{}{1})-[:30]
+(!\nobond\chemabove[1ex]{}{2})-[:-30]
+(-[6]-[:-30])
+-[:30]
+(-[2])
+-[:-30]
+(!\nobond\chembelow[1ex]{}{5})-[:30]
+(!\nobond\chemabove[1ex]{}{6})
+} \end{center}
+\newline
+\newline
+(b) 3-ethyl-5-isobutyl-3-methylnonane
+\newline
+\newline
+\begin{center} \chemfig{
+(!\nobond\chembelow[1ex]{}{1})-[:30]
+(!\nobond\chemabove[1ex]{}{2})-[:-30]
+(-[5]-[4])(-[7])
+-[:30]
+(!\nobond\chemabove[1ex]{}{4})-[:-30]
+(-[6]-[:-30](-[6])(-[:30]))
+-[:30]
+(!\nobond\chemabove[1ex]{}{6})-[:-30]
+(!\nobond\chembelow[1ex]{}{7})-[:30]
+(!\nobond\chemabove[1ex]{}{8})-[:-30]
+(!\nobond\chembelow[1ex]{}{9})-[:30]
+} \end{center}
+\newline
+\newline
+(c) 4-tert-butyl-2-methylheptane
+\newline
+\newline
+\begin{center} \chemfig{
+(!\nobond\chembelow[1ex]{}{1})-[:30]
+(-[2])
+-[:-30]
+(!\nobond\chembelow[1ex]{}{3})-[:30]
+(-[2](-)(-[2])(-[4]))
+-[:-30]
+(!\nobond\chembelow[1ex]{}{5})-[:30]
+(!\nobond\chemabove[1ex]{}{6})-[:-30]
+(!\nobond\chembelow[1ex]{}{7})-[:30]
+} \end{center}
+\newline
+\newline
+(d) 5-isopropyl-3,3,4-trimethyloctane
+\newline
+\newline
+\begin{center} \chemfig{
+(!\nobond\chembelow[1ex]{}{1})-[:30]
+(!\nobond\chemabove[1ex]{}{2})-[:-30]
+(-[:240])(-[:300])
+-[:30]
+(-[2])
+-[:-30]
+(-[6](-[5])(-[7]))
+-[:30]
+(!\nobond\chemabove[1ex]{}{6})-[:-30]
+(!\nobond\chembelow[1ex]{}{7})-[:30]
+} \end{center}
+\newline
+\newline
+
+\subsection{Problem 3-4}
+\label{sec:ch3p4}
+\noindent
+Provide the IUPAC names for the following compounds.
+\newline
+\newline
+(a) \chemfig{ \mbox{$\left(CH_{3}\right)_{2}CHCH_{2}CH_{3}$} }
+\newline
+\newline
+\begin{center} 2-methylbutane \end{center}
+\newline
+\newline
+(b) \chemfig{ 
+\mbox{CH$_3$}
+-\mbox{$C\left(CH_3\right)_2$} 
+-\mbox{CH$_3$} 
+}
+\newline
+\newline
+\begin{center} 2,2-dimethylpropane \end{center}
+\newline
+\newline
+(c) \chemfig{ 
+\mbox{CH$_3$CH$_2$CH$_2$}
+-C
+(-[6]H)
+(-[2]CH$_2$CH$_3$)
+-\mbox{$CH\left(CH_3\right)_2$} 
+}
+\newline
+\newline
+\begin{center} 3-ethyl-2-methylhexane \end{center}
+\newline
+\newline
+(d) \chemfig{ 
+CH$_3$
+-C
+(-[6]H)
+(-[2]CH$_3$)
+-CH$_2$
+-C
+(-[6]H)
+(-[2]CH$_2$CH$_3$)
+-CH$_3$
+}
+\newline
+\newline
+\begin{center} 2,4-dimethylhexane \end{center}
+\newline
+\newline
+(e) \chemfig{ 
+CH$_3$
+-CH$_2$
+-C
+(-[6]H)
+(-[2]\mbox{$C\left(CH_3\right)_3$})
+-C
+(-[2]H)
+(-[6]\mbox{$CH\left(CH_3\right)_2$})
+-CH$_3$
+}
+\newline
+\newline
+\begin{center} 3-ethyl-2,2,4,5-tetramethylhexane \end{center}
+\newline
+\newline
+(f) \chemfig{ 
+\mbox{$\left(CH_3\right)_3$}
+-C
+-C
+(-[6]H)
+(-[2]C(-[4]CH$_3$)(-CHCH$_2$CH$_3$))
+-CH$_2$CH$_2$CH$_3$
+}
+\newline
+\newline
+\begin{center} 4-tert-butyl-3-methylheptane \end{center}
+\newline
+\newline
+
+\subsection{Problem 3-5}
+\label{sec:ch3p5}
+\noindent
+All of the following names are incorrect or incomplete.  In each case, draw the structure (or a possible structure) and name it correctly.
+\newline
+\newline
+(a) 2-methylethylpentane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+(-[6]-[:300])
+-[:30]
+-[:-30]
+}}
+{3-ethyl-2-methylpentane}
+\end{center}
+\newline
+\newline
+(b) 2-ethyl-3-methylpentane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[6])
+-[:30]
+(-[2])
+-[:-30]
+-[:30]
+}}
+{3,4-dimethylhexane}
+\end{center}
+\newline
+\newline
+(c) 3-dimethylhexane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[:240])
+(-[:300])
+-[:30]
+-[:-30]
+-[:30]
+}}
+{3,3-dimethylhexane}
+\end{center}
+\newline
+\newline
+(d) 4-isobutylheptane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+-[:30]
+(-[:60]-[:120]-[:60])
+-[:-30]
+-[:30]
+}}
+{2-methyl-4-propylheptane}
+\end{center}
+\newline
+\newline
+(e) 2-bromo-3-ethylbutane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+(-[6])
+-[:30]
+-[:-30]
+}}
+{2-bromo-3-methylpentane}
+\end{center}
+\newline
+\newline
+(f) 2-diethyl-3-methylhexane
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[2]-[1])
+(-[:250])
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+}}
+{3-ethyl-3,4-dimethylheptane}
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 3-6}
+\label{sec:ch3p6}
+\noindent
+Give structures and names for:
+\newline
+\newline
+(a) the five isomers of C$_6$H$_14$
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+}}
+{hexane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+-[:30]
+-[:-30]
+}}
+{2-methylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[6])
+-[:30]
+-[:-30]
+}}
+{3-methylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[:120])
+(-[:60])
+-[:-30]
+-[:30]
+}}
+{2,2-dimethylbutane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+(-[6])
+-[:30]
+}}
+{2,3-dimethylbutane}
+\end{center}
+\newline
+\newline
+(b) the nine isomers of C$_7$H$_16$
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+}}
+{heptane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+}}
+{2-methylhexane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[6])
+-[:30]
+-[:-30]
+-[:30]
+}}
+{3-methylhexane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[:120])
+(-[:60])
+-[:-30]
+-[:30]
+-[:-30]
+}}
+{2,2-dimethylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[:240])
+(-[:300])
+-[:30]
+-[:-30]
+}}
+{3,3-dimethylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+(-[6])
+-[:30]
+-[:-30]
+}}
+{2,3-dimethylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[2])
+-[:-30]
+-[:30]
+(-[2])
+-[:-30]
+}}
+{2,4-dimethylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:-30]
+-[:30]
+(-[2]-[:30])
+-[:-30]
+-[:30]
+}}
+{3-ethylpentane}
+\end{center}
+\newline
+\newline
+%
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[:60])
+(-[:120])
+-[:-30]
+(-[6])
+-[:30]
+}}
+{2,2,3-dimethylbutane}
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 3-7}
+\label{sec:ch3p7}
+\noindent
+Draw the structures of the following groups, and give their more common names.
+\newline
+\newline
+(a) the (1-methylethyl) group
+\newline
+\newline
+%\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]C(-[2]C(-[2]H)(-[4]H)-H)(-[6]H)-C(-[2]H)(-[6]H)-H}}{isopropyl} \end{center}
+\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]C(-[2]CH$_3$)(-[6]H)-CH$_3$}}{isopropyl} \end{center}
+\newline
+\newline
+(b) the (2-methylpropyl) group
+\newline
+\newline
+%\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]C(-[2]H)(-[6]H)-C(-[2]C(-[2]H)(-[4]H)-H)-C(-[2]H)(-[6]H)-H}}{isobutyl} \end{center}
+\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]CH$_2$-C(-[2]CH$_3$)(-[6]H)-CH$_3$}}{isobutyl} \end{center}
+\newline
+\newline
+(c) the (1-methylpropyl) group
+\newline
+\newline
+\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]C(-[2]CH$_3$)(-[6]H)-CH$_2$CH$_3$}}{sec-butyl} \end{center}
+\newline
+\newline
+(d) the (1,1-dimethylethyl) group
+\newline
+\newline
+\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]C(-[2]CH$_3$)(-[6]CH$_3$)(-CH$_3$)}}{t-butyl} \end{center}
+\newline
+\newline
+(e) the (3-methylbutyl) group, sometimes called the "isoamyl" group
+\newline
+\newline
+\begin{center} \chemname{\chemfig{-[,,,,red,line width=2pt]CH$_2$CH$_2$-C(-[2]CH$_3$)(-[6]H)-CH$_3$}}{isopentyl or isoamyl} \end{center}
+\newline
+\newline
+
+\subsection{Problem 3-8}
+\label{sec:ch3p8}
+\noindent
+Draw the structures of the following compounds.
+\newline
+\newline
+(a) 4-(1,1-dimethylethyl)octane
+\newline
+\newline
+\begin{center} 
+\chemfig{
+-[:-30]
+-[:30]
+-[:-30]
+(-[6](-[4])(-[6])-)
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+}
+\end{center}
+\newline
+\newline
+(b) 5-(1,2,2-trimethylpropyl)nonane
+\newline
+\newline
+\begin{center} 
+\chemfig{
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+(-[6](-[:210])(-[:330](-[:240])(-[:300])(-[:30])))
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+}
+\end{center}
+\newline
+\newline
+(c) 3,3-diethyl-4-(2,2-dimethylpropyl)octane
+\newline
+\newline
+\begin{center} 
+\chemfig{
+-[:-30]
+-[:30]
+(-[:120]-[2])
+(-[:60]-[2])
+-[:-30]
+(-[6]-[:-30](-[:30])(-[:-60])(-[:-120]))
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+}
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 3-9}
+\label{sec:ch3p9}
+\noindent
+Without looking at the structures, give molecular formulas for the compounds in Problem 3-8 (a) and (b).  Use the names of the groups to determine the number of carbon atoms, then use the (2n+2) rule.
+\newline
+\newline
+(a) C$_{12}$H$_{26}$
+\newline
+\newline
+(b) C$_{15}$H$_{32}$
+\newline
+\newline
+
+\subsection{Problem 3-10}
+\label{sec:ch3p10}
+\noindent
+List each set of compounds in order of increasing boiling point.
+\newline
+\newline
+(a) hexane, octane, and decane
+\newline
+\newline
+\begin{center}
+hexane \textless octane \textless decane
+\end{center}
+\newline
+\newline
+(b) octane, \chemfig{\mbox{$\left(CH_3\right)_{3}C$}-\mbox{$C\left(CH_3\right)_{3}$}}, and \chemfig{\mbox{$CH_{3}CH_{2}C\left(CH_{3}\right)_{2}CH_{2}CH_{2}CH_{3}$}}
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+(-[:120])
+(-[:60])
+-[:-30]
+(-[:-120])
+(-[:-60])
+-[:30]
+}}
+{\chemfig{\mbox{$\left(CH_3\right)_{3}C$}-\mbox{$C\left(CH_3\right)_{3}$}}}
+\end{center}
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+(-[:-120])
+(-[:-60])
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+}}
+{$CH_{3}CH_{2}C\left(CH_{3}\right)_{2}CH_{2}CH_{2}CH_{3}$}
+\end{center}
+\newline
+\newline
+\begin{center} 
+\chemname{
+\chemfig{
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+-[:-30]
+-[:30]
+}}
+{octane}
+\end{center}
+\newline
+\newline
+\begin{center}
+\chemfig{\mbox{$\left(CH_3\right)_{3}C$}-\mbox{$C\left(CH_3\right)_{3}$}} \textless \chemfig{\mbox{$CH_{3}CH_{2}C\left(CH_{3}\right)_{2}CH_{2}CH_{2}CH_{3}$}} \textless octane
+\end{center}
+\newline
+\newline
+
+%% [ CHAPTER 4 ] ----------------------------------------------------------------------------------------------
+
+\section{Chapter 4}
+\label{sec:ch4}
+
+\subsection{Problem 4-1}
+\label{sec:ch4p1}
+\noindent
+Draw the Lewis structures of the following free radicals.
+\newline
+\newline
+(a) The ethyl radical, \chemfig{CH$_3$-CH$_2$}
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(b) The \emph{tert-}butyl radical, \chemfig{\mbox{\left\(CH$_3$\right\)$_3$\lewis{0.,C}}}
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(c) The isopropyl radical (2-propyl radical)
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(d) the idodine atom
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+
+\subsection{Problem 4-2}
+\label{sec:ch4p2}
+\noindent
+(a) Write the propagation steps leading to the formulation of dicloromethane (CH$_2$Cl$_2$).
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(b) Explain why free-radical halogenation usually gives mixtures of products.
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(c) How could an industrial plant control the proportions of methane and chlorine to favor production of CCl$_4$?  To favor CH$_3$Cl?
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+
+\subsection{Problem 4-3}
+\label{sec:ch4p3}
+\noindent
+Each of the following proposed mechanisms for the free-radical chlorination of methane is wrong.  Explain how the experimental evidence disproves each mechanism.
+\newline
+\newline
+(a) 
+\schemestart
+\chemfig{Cl$_2$}
+\arrow{->[\emph{h$\nu$}]}
+\chemfig{Cl$_2^{*}$}
+\schemestop
+\newline
+\newline
+\schemestart
+\chemfig{Cl$_2^{*}$}
+\+
+\chemfig{Cl$_4$}
+\arrow{->}
+\chemfig{HCl}
+\+
+\chemfig{CH$_3$Cl}
+\schemestop
+\newline
+\newline
+Propagation steps are not present.
+\newline
+\newline
+(b) 
+\schemestart
+\chemfig{CH$_4$}
+\arrow{->[\emph{h$\nu$}]}
+\chemfig{\lewis{4.,C}H$_3$}
+\+
+\chemfig{H}
+\schemestop
+\newline
+\newline
+\schemestart
+\chemfig{\lewis{4.,C}H$_3$}
+\+
+\chemfig{Cl$_2$}
+\arrow{->}
+\chemfig{CH$_3$Cl}
+\+
+\chemfig{\lewis{0.,Cl}}
+\schemestop
+\newline
+\newline
+\schemestart
+\chemfig{\lewis{0.,Cl}}
+\+
+\chemfig{\lewis{0.,H}}
+\arrow{->}
+\chemfig{HCl}
+\schemestop
+\newline
+\newline
+Propagation steps are not present, nor is there enough energy in light to break the \chemfig{H-CH$_3$} bond.
+\newline
+\newline
+
+\subsection{Problem 4-4}
+\label{sec:ch4p4}
+\noindent
+Free-radical chlorination of hexane gives very poor yeilds of 1-chlorohexane, while cyclohexane can be converted to clorocylclohexane in good yeild.
+\newline
+\newline
+(a) How do you account for this difference?
+\newline
+\newline
+A mixture of all three isomers will be produced.
+\newline
+\newline
+(b) What ratio of reactants (cyclohexane and chlorine) would you use for the synthesis of chlorocyclohexane?
+\newline
+\newline
+Ratio of reactants must be kept high.
+\newline
+\newline
+
+\subsection{Problem 4-5}
+\label{sec:ch4p5}
+\noindent
+The following reaction has a value of \Delta G$^{\circ}$ = -21 kJ/mol (-0.50 kcal/mol).
+\newline
+\newline
+\schemestart
+\chemfig{CH$_3$Br} \+ \chemfig{H$_2$S}
+\arrow{<=>}
+\chemfig{CH$_3$SH} \+ \chemfig{HBr}
+\schemestop
+\newline
+\newline
+(a)  Calculate K$_{eq}$ at room temperature (25$^{\circ}$C) for this reaction as written.
+\newline
+\newline
+\begin{center} K$_{eq}$ = e$^{\frac{-\Delta G^{\circ}}{RT}}$ = 2.3 \end{center}
+\newline
+\newline
+(b)  Starting with a 1 M solution of CH$_3$Br and H$_2$S, calculate the final concentration of all four species at equilibrium.
+\newline
+\newline
+\begin{center} 
+K$_{eq}$ = 2.3 = $\frac{[CH_3SH][HBr]}{[CH_3Br][H_2S]}$
+\newline
+\newline
+$[CH_3SH] = [HBr] = 0.60 M$
+\newline
+\newline
+$[CH_3Br] = [H_2S] = 0.40 M$
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 4-6}
+\label{sec:ch4p6}
+\noindent
+Under base-catalyzed conditions, two molecules of acetone can condense to form diacetone alchohol.  At room temperature (25$^{\circ}$C), about 5\% of the acetone is converted to diacetone alchohol.  Determine the value of \Delta G$^{\circ}$ for this reaction.
+\newline
+\newline
+\schemestart
+2 \chemname{\chemfig{CH$_3$-C([2]=O)-CH$_3$}}{acetone}
+\arrow{<=>[$^{-}$OH]}
+\chemname{\chemfig{CH$$-C-CH$$-C\mbox{$\left(CH_3\right)_2$}([2]-OH)}}{diacetone alchohol}
+\schemestop
+\newline
+\newline
+\begin{center} 
+K$_{eq}$ = $\frac{[diecetone alchohol]}{[acetone]^2}$ = $\frac{0.025}{0.95^2}$ = 0.028
+\newline
+\newline
+\Delta G$^{\circ}$ = -K$_{eq}$RT log$_{10}$ K$_{eq}$ = 8.9 kJ/mole
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 4-7}
+\label{sec:ch4p7}
+\noindent
+When ethene is mixed with hydrogen in the presence of a platinum catalyst, hydrogen adds across the double bond to form ethene.  At room temperature, the rection goes to completion.  Predict the signs of \Delta H$^{\circ}$ and \Delta S$^{\circ}$ for this reaction.  Explain the signs in terms of bonding and freedom of motion.
+\newline
+\newline
+\schemestart
+\chemfig{C([3]-H)([5]-H)=C([1]-H)([7]-H)} \+ \chemfig{H$_2$}
+\arrow{->[Pt catalyst]}
+\chemfig{H-C([2]-H)([6]-H)-C([2]-H)([6]-H)-H}
+\schemestop
+\newline
+\newline
+\begin{center} 
+Both \Delta S$^{\circ}$ and \Delta H$^{\circ}$ will be negative.
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 4-8}
+\label{sec:ch4p8}
+\noindent
+For each reaction estimate whether \Delta S$^{\circ}$ for the reaction is positive, negative, or impossible to predict.
+\newline
+\newline
+(a) (catalytic hydrocracking)
+\newline
+\schemestart
+\chemfig{C$_10$H$_22$}
+\arrow{->[heat, catalyst]}
+\chemfig{C$_3$H$_6$} \+ \chemfig{C$_7$H$_16$}
+\schemestop
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(b) The formation of diacetone alchohol:
+\newline
+\schemestart
+2 \chemfig{CH$_3$C([2]=O)CH$_3$}
+\arrow{<=>[$^{-}$OH]}
+\chemfig{CH$_3$C([2]=O)CH$_2$-C\mbox{$\left(CH_3\right)$}([2]-OH)}
+\schemestop
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+
+%% [ CHAPTER 5 ] ----------------------------------------------------------------------------------------------
+
+\section{Chapter 5}
+\label{sec:ch5}
+
+\subsection{Problem 5-1}
+\label{sec:ch5p1}
+\noindent
+Determine if the following objects are chiral or achiral.
+\newline
+\newline
+Tape
+\newline
+\newline
+\begin{center} achiral \end{center}
+\newline
+\newline
+Can Opener
+\newline
+\newline
+\begin{center} chiral \end{center}
+\newline
+\newline
+Sled
+\newline
+\newline
+\begin{center} achiral \end{center}
+\newline
+\newline
+Corkscrew
+\newline
+\newline
+\begin{center} chiral \end{center}
+\newline
+\newline
+Chair
+\newline
+\newline
+\begin{center} chiral \end{center}
+\newline
+\newline
+Salt Shaker
+\newline
+\newline
+\begin{center} chiral \end{center}
+\newline
+\newline
+Spoon
+\newline
+\newline
+\begin{center} achiral \end{center}
+\newline
+\newline
+Rifle
+\newline
+\newline
+\begin{center} chiral \end{center}
+\newline
+\newline
+Knot
+\newline
+\newline
+\begin{center} Chiral \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-2}
+\label{sec:ch5p2}
+\noindent
+Make a model and draw a three-dimensional structure for each compound.  Then draw the mirror image of your original structure and determine whether the mirror image is the same compound.  label each structure as being chiral or achiral, and label pairs of enantiomers.
+\newline
+\newline
+(a) \emph{cis-}1,2-dimethylcyclobutane
+\newline
+\newline
+\begin{center} achiral (see attached) \end{center}
+\newline
+\newline
+(b) \emph{trans-}1,2-dimethylcyclobutane
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+(c) \emph{cis-}1,3-dimethylcyclobutane
+\newline
+\newline
+\begin{center} achiral (see attached) \end{center}
+\newline
+\newline
+(d) 2-bromobutane
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+(e) \quad\setcrambond{3pt}{}{}
+\chemfig{<[:10](>[:85,1.8]?())
+>[:-10]=[:60](-[:30,0.6]CH$_3$)-[:170]?()-[:190]-[:240]}
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+(f) \chemfig{*5(--([:80]<OH)([:10]>:CH$_3$)-O--)}
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-3}
+\label{sec:ch5p3}
+\noindent
+Draw a three-dimensional structure for each compound, and star all asymmetric carbon atoms.  Draw the mirror image for each structure, and state weather you have drawn a pair of enantiomers or just the same molecule twice.  Build molecular models of any of these examples that seem difficult to you.
+\newline
+\newline
+(a) \chemname{\chemfig{[:-30]-[:30]([2]-OH)-[:-30]-[:30]-}}{pentan-2-ol}
+\newline
+\newline
+\begin{center} enantiomers (see attached) \end{center}
+\newline
+\newline
+(b) \chemname{\chemfig{[:30]-[:-30]-[:30]([2]-OH)-[:-30]-}}{pentan-3-ol}
+\newline
+\newline
+\begin{center} same (see attached) \end{center}
+\newline
+\newline
+(c) \chemname{\chemfig{CH$_3$-CH([2]-NH$_2$)-COOH}}{alanine}
+\newline
+\newline
+\begin{center} enantiomers (see attached) \end{center}
+\newline
+\newline
+(d) 1-bromo-methylbutane
+\newline
+\newline
+\begin{center} enantiomers (see attached) \end{center}
+\newline
+\newline
+(e) chlorocyclohexene
+\newline
+\newline
+\begin{center} same (see attached) \end{center}
+\newline
+\newline
+(f) \emph{cis-}1,2-diclorocyclobutane
+\newline
+\newline
+\begin{center} same (see attached) \end{center}
+\newline
+\newline
+(g) \chemfig{C([6]-H)([:150]-H)=[:30]C([2]>*6(([7]>:H)---=--))-[:-30]CH$_3$}
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+(h) 
+\quad\setcrambond{3pt}{}{}
+\chemfig{<[:10](>[:85,1.8]?())
+>[:-10]=[:60](-[:30,0.6]CH$_3$)-[:170]?()-[:190]-[:240]}
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+(i) \chemfig{*6(=-*5(-----)([6]<H)-([2]<H)---)}
+\newline
+\newline
+\begin{center} chiral enantiomers (see attached) \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-4}
+\label{sec:ch5p4}
+\noindent
+For each of the stereocenters (circled) in Figure 5-5,
+\newline
+\newline
+(a) draw the compound with two of the groups on the stereocenter interchanged.
+\newline
+\newline
+\chemfig{\chemabove{C}{*}([2]-CH$_2$CH$_3$)([5]-H$_3$C)([7]<H)([:-20]<:Br)}
+\newline
+\newline
+\newline
+\newline
+\chemfig{\chemabove{N}{* \oplus}{}([2,1.5]-CH$_2$CH$_2$CH$_3$)([5,1.5]-H$_3$C)([7,1.5]<CH$_2$CH$_3$)([:-20,1.5]<:\mbox{$CH\left\(CH_3\right\)_2$})}
+\newline
+\newline
+(b) give the relationship of the new compound to the original compound.
+\newline
+\newline
+\begin{center} enantiomers \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-5}
+\label{sec:ch5p5}
+\noindent
+For each compound, determine whether the molecule has an internal mirror plane of symmetry.  If it does, draw the mirror plane on a three-dimensional drawing of the molecule.  If the molecule does not have an internal mirror plane, determine whether or not the structure is chiral.
+\newline
+\newline
+(a) methane
+\newline
+\newline
+\begin{center} symmetric (see attached) \end{center}
+\newline
+\newline
+(b) \emph{cis-}1,2-dibromocyclobutane
+\newline
+\newline
+\begin{center} symmetric (see attached) \end{center}
+\newline
+\newline
+(c) \emph{trans-}1,2-dibromocyclobutane
+\newline
+\newline
+\begin{center} chiral (see attached) \end{center}
+\newline
+\newline
+(d) 1,2-dichloropropane
+\newline
+\newline
+\begin{center} chiral (see attached) \end{center}
+\newline
+\newline
+(e) \chemname{\chemfig{HOCH$_2$-CH([2]-OH)-CHO}}{glyceraldehyde}
+\newline
+\newline
+\begin{center} chiral (see attached) \end{center}
+\newline
+\newline
+(f) \chemname{\chemfig{CH$_3$-CH([2]-NH$_3$)-COOH}}{alanine}
+\newline
+\newline
+\begin{center} chiral (see attached) \end{center}
+\newline
+\newline
+(g) \chemfig{[:90]*6(-(<:CH([1]-CH$_3$)([7]-CH$_3$))---(<CH$_3$)--)}
+\newline
+\newline
+\begin{center} symmetric (see attached) \end{center}
+\newline
+\newline
+(h) 
+\quad\setcrambond{3pt}{}{}
+\chemfig{<[:10](>[:85,1.8]?())
+>[:-10]=[:60]-[:170]?()-[:190]-[:240]}
+\newline
+\newline
+\begin{center} symmetric (see attached) \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-6}
+\label{sec:ch5p6}
+\noindent
+Star (*) each asymmetric carbon atom in the following examples, and determine whether it has the (R) or (S) configuration.
+\newline
+\newline
+(a) \chemfig{C([2]-CH$_3$)([5]<H)([7]-CH$_2$CH$_3$)([:190]>:OH)}
+\newline
+\newline
+\begin{center} R \end{center}
+\newline
+\newline
+(b) \chemfig{C([2]-H)([5]<H$_3$C)([7]-CH$_2$CH$_3$)([:190]>:Br)}
+\newline
+\newline
+\begin{center} S \end{center}
+\newline
+\newline
+(c) \chemfig{C([6]-H)([3]-H)=[:30]C([2]-H)-[:-30]C([5]>:H)([7]<CH$_3$)-[:30]C([3]>:H)([1]<CH$_3$)-[:-30]CH$_3$}
+\newline
+\newline
+\begin{center} R \end{center}
+\newline
+\newline
+(d) \chemfig{[:20]*5(([,0.7]-H)([2,0.6]-Cl)-([,0.7]-Cl)([2,0.6]-H)----)}
+\newline
+\newline
+\begin{center} S \end{center}
+\newline
+\newline
+(e) \chemfig{[:20]*5(([,0.7]-Cl)([2,0.6]-H)-([,0.7]-Cl)([2,0.6]-H)----)}
+\newline
+\newline
+\begin{center} S \end{center}
+\newline
+\newline
+(f) 
+\quad\setcrambond{3pt}{}{}
+\chemfig{<[:10](>[:85,1.8]?())
+>[:-10]=[:60]-[:170]?()-[:190]-[:240]}
+\newline
+\newline
+\begin{center} S \end{center}
+\newline
+\newline
+(g) 
+\quad\setcrambond{3pt}{}{}
+\chemfig{<[:10](>[:85,1.8]?())
+>[:-10]=[:60](-[:30,0.6]CH$_3$)-[:170]?()-[:190]-[:240]}
+\newline
+\newline
+\begin{center} R \end{center}
+\newline
+\newline
+(h) \chemfig{[:20]*5(-(<H)([:-10]>:D)--(=O)--)}
+\newline
+\newline
+\begin{center} R \end{center}
+\newline
+\newline
+(*i) \chemfig{C([5,1.5]-\mbox{$\left(CH_{3}O\right)_{2}CH$})([2,1.5]-CHO)([7,1.5]>\mbox{$CH\left(CH_{3}\right)_{2}$})([:-15]>:CH([0]=CH$_2$))}
+\newline
+\newline
+\begin{center} S \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-7}
+\label{sec:ch5p7}
+\noindent
+In Problem 5-3, you drew the enantiomers for a number of chiral compounds.  Now go back and designate each asymmetric carbon atom as either (R) or (S).
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-8}
+\label{sec:ch5p8}
+\noindent
+A solution of 2.0 g of (+)-glyceraldehyde, \chemfig{HOCH$_2$-CHOH-CHO}, in 10.0 mL of water was placed in a 100-mm cell.  Using the sodium D line, a rotation of +1.74$^{\circ}$ was found at 25 $^{\circ}$C.  Determine the specific rotation of (+)-glyceraldehyde.
+\newline
+\newline
+\begin{center} $\left[\alpha\right]_{D^{25}} = \frac{+1.74^{\circ}}{\frac{2.0 g}{10.0 mL} \cdot 10 mm} = +8.7^{\circ}$ \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-9}
+\label{sec:ch5p9}
+\noindent
+A solution of 0.50 g of (-)-epinephrine, (see Figure 5-15) dissolved in 10.0 mL of dilute aqueous HCl was placed in a 20-cm polarimeter tube.  Using the sodium D line, the rotation was found to be -5.1$^{\circ}$ at 25$^{\circ}$C.  Determine the specific rotation of epinephrine.
+\newline
+\newline
+\begin{center} $\left[\alpha\right]_{D^{25}} = \frac{-5.1^{\circ}}{\frac{0.50 g}{10.0 mL} \cdot 20 cm} = -51^{\circ}$ \end{center}
+\newline
+\newline
+
+\subsection{Problem 5-10}
+\label{sec:ch5p10}
+\noindent
+A chiral sample gives a rotation that is close to 180$^{\circ}$.  How can one tell whether this rotaiton is +180$^{\circ}$ or -180$^{\circ}$?
+\newline
+\newline
+Measure a 1:4 ratio concentration, and use the sign of the result.
+\newline
+\newline
+
+%% [ CHAPTER 6 ] ----------------------------------------------------------------------------------------------
+
+\section{Chapter 6}
+\label{sec:ch6}
+
+\subsection{Problem 6-1}
+\label{sec:ch6p1}
+\noindent
+Classify each compound as an alkyl halide, a vinyl halide, or an aryl halide.
+\newline
+\newline
+(a) CH$_{3}$CHCFCH$_{3}$
+\newline
+\newline
+\begin{center} vinyl halide \end{center}
+\newline
+\newline
+(b) (CH$_3$)$_3$CBr
+\newline
+\newline
+\begin{center} alkyl halide \end{center}
+\newline
+\newline
+(c) CH$_3$CCl$_3$
+\newline
+\newline
+\begin{center} alkyl halide \end{center}
+\newline
+\newline
+(d) \chemname{\chemfig{*6(---(-Br)---)}}{bromocyclohexane}
+\newline
+\newline
+\begin{center} alkyl halide \end{center}
+\newline
+\newline
+(e) \chemname{\chemfig{*6(--=(-Br)---)}}{1-bromocyclohexene}
+\newline
+\newline
+\begin{center} vinyl halide \end{center}
+\newline
+\newline
+(f) \chemname{\chemfig{[::+90]*6((-Cl)-(-*6(-=-(-Cl)=-(-Cl)=))=(-Cl)-=(-Cl)-=)}}{a PCB (polychlorinated biphenyl)}
+\newline
+\newline
+\begin{center} aryl halide \end{center}
+\newline
+\newline
+
+\subsection{Problem 6-2}
+\label{sec:ch6p2}
+\noindent
+Give the structures of the following compounds:
+\newline
+\newline
+(a) methylene iodide
+\newline
+\newline
+\begin{center}
+\chemfig{I-C([2]-H)([6]-H)-I}
+\end{center}
+\newline
+\newline
+(b) carbon tetrabromide
+\newline
+\newline
+\begin{center}
+\chemfig{Br-C([2]-Br)([6]-Br)-Br}
+\end{center}
+\newline
+\newline
+(c) 3-bromo-2-methylpentane
+\newline
+\newline
+\begin{center}
+\chemfig{
+[:-30]
+-
+[:30]
+([2]-)
+-
+[:-30]
+([6]-Br)
+-
+[:30]
+-
+}
+\end{center}
+\newline
+\newline
+(d) iodoform
+\newline
+\newline
+\begin{center}
+\chemfig{I-C([2]-I)([6]-I)-I}
+\end{center}
+\newline
+\newline
+(e) 2-bromo-3-ethyl-2-methylhexane
+\newline
+\newline
+\begin{center}
+\chemfig{
+[:-30]
+-[:30]
+([1]-Br)
+([3]-)
+-[:-30]
+(-[6]-[:-30])
+-[:30]
+-[:-30]
+-[:30]
+}
+\end{center}
+\newline
+\newline
+(f) isobutyl bromide
+\newline
+\newline
+\begin{center}
+\chemfig{
+-[:30]
+([2]-)
+-[:-30]
+-[:30]Br
+}
+\end{center}
+\newline
+\newline
+(g) \emph{cis}-1-fluoro-3-(fluoromethyl)cyclohexane
+\newline
+\newline
+\begin{center}
+\chemfig{
+[::30]
+*6(---([:20]<CH$_2$F)([:110]>:H)--([:220]<F)([:130]>:H)-)
+}
+\end{center}
+\newline
+\newline
+(h) \emph{tert}-butyl chloride
+\newline
+\newline
+\begin{center}
+\chemfig{
+-([2]-)([6]-)-Cl
+}
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 6-3}
+\label{sec:ch6p3}
+\noindent
+For each of the following compounds,
+\newline
+\newline
+1. give the IUPAC name.
+\newline
+\newline
+2. give the common name.
+\newline
+\newline
+3. classify the compound as a methyl, primary, secondary, or tertiary halide.
+\newline
+\newline
+(a) (CH$_3$)$_2$CHCH$_2$Cl
+\newline
+\newline
+1.  1-chloro-2-methylpropane
+\newline
+\newline
+2.  isobutyl chloride
+\newline
+\newline
+3.  1$^{\circ}$ halide
+\newline
+\newline
+(b) (CH$_3$)$_3$CBr
+\newline
+\newline
+1.  2-bromo-2-methylpropane
+\newline
+\newline
+2.  \emph{tert-}butyl bromide
+\newline
+\newline
+3.  3$^{\circ}$ halide
+\newline
+\newline
+(c) \chemfig{CH$_3$-CH([::90]-CH$_2$CH$_3$)-CH$_2$Cl}
+\newline
+\newline
+1.  1-chloro-2-methylbutane
+\newline
+\newline
+2.  n/a
+\newline
+\newline
+3.  1$^{\circ}$ halide
+\newline
+\newline
+(d) \chemfig{*6(([:+165]-H)([:+240]-F)---([:+40]-CH$_3$)([:-15]-CH$_3$)---)}
+\newline
+\newline
+1.  4-fluoro-1,1-dimethylcyclohexane
+\newline
+\newline
+2.  n/a
+\newline
+\newline
+3.  2$^{\circ}$ halide
+\newline
+\newline
+(e) \chemfig{
+Br
+-[:-30]
+([6]-([:210]-)([:30]-[:-30]-))
+-[:30]
+-[:-30]
+-[:30]
+}
+\newline
+\newline
+1.  4-bromo-3-methylheptane
+\newline
+\newline
+2.  n/a
+\newline
+\newline
+3.  2$^{\circ}$ halide
+\newline
+\newline
+(f) \chemfig{*4(-(>:H)([0]<Cl)-(<Br)([0]>:H)--)}
+\newline
+\newline
+1.  \emph{cis-}1-bromo-2-chlorocyclobutane
+\newline
+\newline
+2.  n/a
+\newline
+\newline
+3.  both 2$^{\circ}$ halides
+\newline
+\newline
+
+\subsection{Problem 6-4}
+\label{sec:ch6p4}
+\noindent
+Kepone and clordane are synthesized from hexaclorocyclopentadiene and other five-membered-ring compounds.  Show how these two pesticides are composed of two five-membered rings.
+\newline
+\newline
+\begin{center}
+\chemname{\chemfig{*5((-Cl)-(-Cl)=(-Cl)-(([::-20]-Cl)([::-80]-Cl))-(-Cl)=)}}{hexachlorocyclopentadiene}
+\end{center}
+\newline
+\newline
+
+\subsection{Problem 6-5}
+\label{sec:ch6p5}
+\noindent
+For each pair of compounds, predict which one has the higher molecular dipole moment, and explain your reasoning.
+\newline
+\newline
+(a) ethyl chloride or ethyl iodide
+\newline
+\newline
+\begin{center} ethyl chloride \end{center}
+\newline
+\newline
+(b) 1-bromopropane or cylclopropane
+\newline
+\newline
+\begin{center} 1-bromopropane \end{center}
+\newline
+\newline
+(c) \emph{cis-}2,3-dibromobut-2-ene or \emph{trans-}2,3-dibromobut-2-ene
+\newline
+\newline
+\begin{center} \emph{cis-}2,3-dibromobut-2-ene \end{center}
+\newline
+\newline
+(d) \emph{cis-}1,2-dichlorocyclobutane or \emph{trans-}1,3-dichlorocyclobutane
+\newline
+\newline
+\begin{center} \emph{cis-}1,2-dichlorocyclobutane \end{center}
+\newline
+\newline
+
+\subsection{Problem 6-6}
+\label{sec:ch6p6}
+\noindent
+For each pair of compounds, predict which compound has the higher boiling point. Check table 6-2 to see if your prediction was right, then explain why that compound has the higher boiling point.
+\newline
+\newline
+(a) isopropyl bromide and \emph{n-}butyl bromide
+\newline
+\newline
+\begin{center} \emph{n-}butyl bromide \end{center}
+\newline
+\newline
+(b) isopropyl chloride and \emph{tert-}butyl bromide
+\newline
+\newline
+\begin{center} \emph{tert-}butyl bromide \end{center}
+\newline
+\newline
+(c) 1-bromobutane and 1-clorobutane
+\newline
+\newline
+\begin{center} 1-bromobutane \end{center}
+\newline
+\newline
+
+\subsection{Problem 6-7}
+\label{sec:ch6p7}
+\noindent
+When water is shaken with hexane, the two liquids separate into two phases.  Which compound is present in the top phase, and which is present int he bottom phase?  When water is shaken with cloroform, a similar two-phase system results.  Again, which compound is present in each phase?  Explain the difference in the two experiments.  What do you expect to happen when water is shaken with ethanol (CH$_3$CH$_2$OH)?
+\newline
+\newline
+Hexane is in the top phase (d 0.66), and chloroform is in the bottom phase (d 1.50).  Water is in the middle layer (d 1.00).
+\newline
+\newline
+
+\subsection{Problem 6-8}
+\label{sec:ch6p8}
+\noindent
+(a) Propose a mechanism for the following reaction:
+\newline
+\newline
+initiation (1) 
+\newline
+\begin{center}
+\schemestart
+\chemfig{@{x2a}Br-@{x1}-Br@{x2b}}
+\chemmove{
+  \draw[->,shorten <=3pt, shorten>=1pt] (x1).. controls +(90:4mm) and +(90:4mm).. (x2a); 
+  \draw[->,shorten <=3pt, shorten>=1pt] (x1).. controls +(90:4mm) and +(90:4mm).. (x2b); 
+}
+\arrow{->[\emph{h$\nu$}]}
+2 \chemfig{\lewis{0.,Br}}
+\schemestop
+\end{center}
+\newline
+\newline
+propagation (2) 
+\newline
+\begin{center}
+\schemestart
+\chemfig{H$_2$C=CH-@{y2a}CH$_2$([2]@{y1a}-H)}
+\chemfig{@{y2b} \+} \chemfig{@{y1b}\lewis{0.,Br}}
+\chemmove{
+  \draw[->,shorten <=3pt, shorten>=1pt] (y1a).. controls +(90:4mm) and +(-45:4mm).. (y2a); 
+  \draw[->,shorten <=3pt, shorten>=1pt] (y1a).. controls +(90:4mm) and +(-45:4mm).. (y2b); 
+  \draw[->,shorten <=3pt, shorten>=1pt] (y1b).. controls +(90:4mm) and +(-45:4mm).. (y2b); 
+}
+\arrow{->}
+  HBr \+
+ \{
+  H$_2$C=CH-\lewis{2.,C}H$_2$
+  \arrow{<->}
+  \lewis{2.,C}H$_2$-CH=H$_2$C
+ \}
+\schemestop
+\end{center}
+\newline
+\newline
+propagation (3) 
+\newline
+\begin{center}
+\schemestart
+\chemfig{H$_2$C=CH-@{z1a}\lewis{2.,C}H$_2$}
+\chemfig{@{z2a}\+} \chemfig{Br-@{z1b}-@{z2b}\lewis{0.,Br}}
+\chemmove{
+  \draw[->,shorten <=3pt, shorten>=1pt] (z1a).. controls +(90:4mm) and +(180:4mm).. (z2a); 
+  \draw[->,shorten <=3pt, shorten>=1pt] (z1b).. controls +(90:4mm) and +(-180:4mm).. (z2a); 
+  \draw[->,shorten <=3pt, shorten>=1pt] (z1b).. controls +(90:4mm) and +(90:4mm).. (z2b); 
+}
+\arrow{->}
+  \chemfig{H$_2$C=CH-CH$_2$([6]-Br)}
+ \+
+  \lewis{2.,Br}
+\schemestop
+\end{center}
+\newline
+\newline
+(b) Use the bond-dissasociation enthaplies given in table 4-2 (page 143) to calculate the value of $\Delta$H$^{\circ}$ for each step shown in your mechanism.  (The BDE for \chemfig{CH$_2$=CHCH$_2$-Br} is about 280 kJ/mol, or 67 kcal/mol.)  Calculate the overall value of $\Delta$H$^{\circ}$ for the reaction.  Are these values consistent with a rapid free-radical chain reaction?
+\newline
+\newline
+(2) propagation
+\newline
+break \chemfig{C-H} and form \chemfig{H-Br}:  -4 kJ/mole, -1 kcal/mole
+\newline
+\newline
+(3) propagation
+\newline
+break \chemfig{Br-Br} and form \chemfig{C-Br}:  -88 kJ/mole, -21 kcal/mole
+\newline
+\newline
+total $\Delta$H$^{\circ}$ = -92 kJ/mole, -22 kcal/mole
+\newline
+\newline
+
+\subsection{Problem 6-9}
+\label{sec:ch6p9}
+\noindent
+The light-initiated reaction of 2,3-dimethylbut-2-ene with N-bromosuccinimide (NBS) gives two products:
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemname{\chemfig{C([3]-H$_3$C)([5]-H$_3$C)=C([1]-CH$_3$)([7]-CH$_3$)}}{2,3-dimethylbut-2-ene}
+\arrow{->[NBS,\emph{h$\nu$}]}
+\chemfig{C([3]-H$_3$C)([5]-H$_3$C)=C([1]-CH$_2$-[0]Br)([7]-CH$_3$)}
++
+\chemfig{Br-C(-[2]CH$_3$)(-[6]CH$_3$)=C([1]=CH$_2$)([7]-CH$_3$)}
+\schemestop
+\end{center} 
+\newline
+\newline
+(a) Give a mechanism for this reaction, showing how the two products arise as a consequence of the resonance-stabilized intermediates.
+\newline
+\newline
+\begin{center} see attached \end{center}
+\newline
+\newline
+(b) The bromination of cyclohexene using NBS gives only one major product, as shown on page 227.  Explain why there is no second product from an allylic shift.
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemfig{[:90]*6(-----=)}
+\arrow{->[NBS,\emph{h$\nu$}]}
+\chemfig{[:90]*6(-(-Br)----=)}
++
+\chemfig{[:190]*6(-(-Br)----=)}
+\schemestop
+\end{center} 
+\newline
+\newline
+
+\subsection{Problem 6-10}
+\label{sec:ch6p10}
+\noindent
+Show how the free-radical halogenation might be used to synthesize the following compounds.  In each case, explain why we expect to get a single major product.
+\newline
+\newline
+(a) 1-chloro-2,2-dimethylpropane (neopentyl chloride)
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemfig{CH$_3$-C([2]-CH$_3$)([6]-CH$_3$)-CH$_3$}
+\arrow{->[Cl$_2$,\emph{h$\nu$}]}
+\chemfig{CH$_3$-C([2]-CH$_3$)([6]-CH$_3$)-CH$_2$Cl}
+\schemestop
+\end{center} 
+\newline
+\newline
+(b) 2-bromo-2-methylbutane
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemfig{CH$_3$-C([2]-CH$_3$)([6]-CH$_3$)-CH$_3$}
+\arrow{->[Br$_2$,\emph{h$\nu$}]}
+\chemfig{CH$_3$-C([2]-CH$_3$)([6]-CH$_2$[0]-CH$_3$)-CH$_2$Br}
+\schemestop
+\end{center} 
+\newline
+\newline
+(c) \chemname{\chemfig{[::+90]*6(-(-CH([2]-Br)-CH$_2$CH$_2$CH$_3$)=-=-=)}}{1-bromo-1-phenylbutane}
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemfig{[:90]*6(-([0]-C([2]-H)([6]-H)-CH$_2$CH$_2$CH$_3$)=-=-=)}
+\arrow{->[Br$_2$,\emph{h$\nu$}]}
+\chemfig{[:90]*6(-([0]-C([2]-Br)([6]-H)-CH$_2$CH$_2$CH$_3$)=-=-=)}
+\schemestop
+\end{center} 
+\newline
+\newline
+(d) \chemfig{*6(-=*5(-=-(-Br)--)-=-=)}
+\newline
+\newline
+\begin{center} 
+\schemestart
+\chemfig{*6(-=*5(-=---)-=-=)}
+\arrow{->[Br$_2$,\emph{h$\nu$}]}
+\chemfig{CH$_3$SH} \+ \chemfig{HBr}
+\schemestop
+\newline
+\newline
+(a)  Calculate K$_{eq}$ at room temperature (25$^{\circ}$C) for this reaction as written.
+\newline
+\newline
+(b)  Starting with a 1 M solution of CH$_3$Br and H$_2$S, calculate the final concentration of all four species at equilibrium.
+\newline
+\newline
+
+\end{document}
+
+%% *EOF*
